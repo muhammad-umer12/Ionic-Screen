@@ -1,0 +1,156 @@
+.welcome-card img {
+  max-height: 35vh;
+  overflow: hidden;
+}
+
+.body{
+ background:white;
+ margin-top: 20px;
+ padding-left:10px;
+}
+
+.default_image{
+  border-radius:50%;
+  height:50px;
+  width: 50px;
+  
+ 
+  background: #DADADA;
+}
+
+.username{
+  font-family: Arial;
+font-style: normal;
+font-weight: 900;
+font-size: 20px;
+line-height: 23px;
+display: flex;
+align-items: center;
+margin-left: 10px;
+}
+
+.username h5{
+  margin-top: 5px;
+  margin-bottom: 0px;
+  font-weight: 20px;
+}
+
+.inner_username{
+
+  font-family: Arial;
+font-style: normal;
+font-weight: 12px;
+font-size: 14px;
+line-height: 18px;
+display: flex;
+align-items: center;
+color: rgb(91,96,103);
+margin-left: 10px;
+
+}
+
+.second_row{
+  margin-top: 30px;
+}
+
+.news-heading{
+font-family: Arial;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 18px;
+
+
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+}
+
+.third-row{
+  margin-top: 20px;
+  margin-left: 5px;
+}
+.third-row p{
+  margin-top: 0px;
+  font-size: 12px;
+  margin-bottom: 0px;
+}
+
+
+.third-row-para{
+  color: rgb(91,96,103);
+
+}
+
+.fourth-row{
+  margin-top: 4px;
+  margin-left: 5px;
+}
+.fourth-row-para{
+  color: rgb(203,203,203);
+}
+.fourth-row-para p{
+  margin-top: 0px;
+  font-size: 12px;
+  margin-bottom: 0px;
+}
+
+.fifth-row{
+  margin-top: 20px;
+}
+
+
+.gym-heading{
+  font-weight: 600;
+  font-family: Arial;
+  font-size: 18px;
+}
+
+.gym-image{
+  height:80px;
+  width:80px;
+  border-radius: 15%;
+}
+
+.sixth-row{
+  margin-top: 15px; 
+}
+
+.gym-name{
+  max-width:200px;
+  color:rgb(68,74,82);
+  font-weight: 600;
+  font-size:15px;
+}
+
+.gym-details{
+  margin-top: 0px;
+  color:rgb(68,74,82);
+  font-weight: 300;
+  font-size: 15px;
+  
+}
+
+ion-icon{
+  font-size: 22px;
+  
+}
+.icn{
+  margin-top:20px;
+}
+ion-button{
+  color:white;
+  
+  max-width:120px;
+  height:25px;
+  font-size: 10px;
+  text-align: center;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+
+
+}

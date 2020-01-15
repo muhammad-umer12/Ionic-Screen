@@ -1,0 +1,120 @@
+
+<ion-content     [scrollEvents]="true">
+  <div class="body">
+    <div>
+      <ion-grid >
+        <ion-row>
+          <ion-col size="2">
+            <ion-avatar>
+            <img src="../../assets/images/default.png" class="default_image">
+            </ion-avatar>
+          </ion-col>
+          <ion-col size="8">
+            <div class="username"><h5><strong>Hello, <span style="color:rgb(101,198,187)"> Username</span></strong></h5></div>
+            <div class="inner_username">Welcome to M20 healthy life. </div>
+          </ion-col>
+         
+          <ion-col>
+            <div class="icn">
+           <a href="#" > <ion-icon name="ios-options"></ion-icon></a>
+           </div>
+          </ion-col>
+        </ion-row>
+       <div class="second-row">
+        <ion-row>
+          <ion-col size="6">
+            <div class="news-heading"><strong>News</strong></div>
+          </ion-col>
+         
+        </ion-row>
+        </div>
+      
+      <div class="third-row">
+        <ion-row>
+          <ion-col >
+            <p class="third-row-para">News content title here.Display max 1 line here...</p>
+          </ion-col>
+        </ion-row>
+      </div>
+
+      <div class="fourth-row">
+        <ion-row>
+          <ion-col  size="12" class="fourth-row-para"><p>
+            lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Vitae commodo a,quam turpis molestie vitae pallentesque.
+            Leo massa velit cras morbi amet quis morbi.</p>
+          </ion-col>
+         
+        </ion-row>
+      </div>
+
+      <div class="fifth-row">
+        <ion-row>
+          <ion-col >
+            <div class="gym-heading">Best Gyms near you</div>
+          </ion-col>
+        </ion-row>
+      </div>
+
+      <div class="sixth-row" *ngFor="let gym of arr">
+        <ion-row>
+          <ion-col  size="3.5">
+            <img src="../../assets/images/gym.jpg" class="gym-image">
+          </ion-col>
+
+          <ion-col  size="7.7">
+            <div class="gym-name"><ion-label class="ion-text-wrap">{{gym.gymName}}</ion-label></div>
+            <div class="gym-details"><ion-row><ion-col size="1.5"><ion-icon  name="ios-time"></ion-icon> </ion-col><ion-col size="9">{{gym.gymDetails}}</ion-col></ion-row> </div>
+            <div *ngIf="gymm == true" class="buttons"><ion-row ><ion-col size="6"></ion-col> <ion-col size="6"><ion-button color="secondary">Available</ion-button></ion-col></ion-row></div>
+            <div  *ngIf="gymm== false"class="buttons"><ion-row ><ion-col size="6"></ion-col> <ion-col size="6"><ion-button color="medium">Unvailable</ion-button></ion-col></ion-row></div>
+         
+          </ion-col>
+      
+        </ion-row>
+
+      </div>
+
+
+      
+      
+      </ion-grid>
+    </div>
+  </div>
+</ion-content>  
+<!--
+<ion-content>
+    <ion-card class="welcome-card">
+      <img src="/assets/shapes.svg" alt="" />
+      <ion-card-header>
+        <ion-card-subtitle>Get Started</ion-card-subtitle>
+        <ion-card-title>Welcome to Ionic</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Now that your app has been created, you'll want to start building out features and components. Check out some of the resources below for next steps.</p>
+      </ion-card-content>
+    </ion-card>
+    <ion-list lines="none">
+      <ion-list-header>
+        <ion-label>Resources</ion-label>
+      </ion-list-header>
+      <ion-item href="https://ionicframework.com/docs/">
+        <ion-icon slot="start" color="medium" name="book"></ion-icon>
+        <ion-label>Ionic Documentation</ion-label>
+      </ion-item>
+      <ion-item href="https://ionicframework.com/docs/building/scaffolding">
+        <ion-icon slot="start" color="medium" name="build"></ion-icon>
+        <ion-label>Scaffold Out Your App</ion-label>
+      </ion-item>
+      <ion-item href="https://ionicframework.com/docs/layout/structure">
+        <ion-icon slot="start" color="medium" name="grid"></ion-icon>
+        <ion-label>Change Your App Layout</ion-label>
+      </ion-item>
+      <ion-item href="https://ionicframework.com/docs/theming/basics">
+        <ion-icon slot="start" color="medium" name="color-fill"></ion-icon>
+        <ion-label>Theme Your App</ion-label>
+      </ion-item>
+    </ion-list>
+</ion-content>
+
+
+!-->
