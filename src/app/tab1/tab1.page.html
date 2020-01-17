@@ -1,4 +1,4 @@
-
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 <ion-content     [scrollEvents]="true">
   <div class="body">
     <div>
@@ -10,13 +10,13 @@
             </ion-avatar>
           </ion-col>
           <ion-col size="8">
-            <div class="username"><h5><strong>Hello, <span style="color:rgb(101,198,187)"> Username</span></strong></h5></div>
+            <div class="username">Hello, <span style="color:rgb(101,198,187)"> Username</span></div>
             <div class="inner_username">Welcome to M20 healthy life. </div>
           </ion-col>
          
           <ion-col>
             <div class="icn">
-           <a href="#" > <ion-icon name="ios-options"></ion-icon></a>
+           <a href="#" > <img class="setting" src="../../assets/images/settingIcon.png"></a>
            </div>
           </ion-col>
         </ion-row>
@@ -31,14 +31,14 @@
       
       <div class="third-row">
         <ion-row>
-          <ion-col >
+          <ion-col class="cntrl">
             <p class="third-row-para">News content title here.Display max 1 line here...</p>
           </ion-col>
         </ion-row>
       </div>
 
       <div class="fourth-row">
-        <ion-row>
+        <ion-row class="cntrl-2">
           <ion-col  size="12" class="fourth-row-para"><p>
             lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Vitae commodo a,quam turpis molestie vitae pallentesque.
@@ -50,27 +50,28 @@
 
       <div class="fifth-row">
         <ion-row>
-          <ion-col >
+          <ion-col class="cntrl-3">
             <div class="gym-heading">Best Gyms near you</div>
           </ion-col>
         </ion-row>
       </div>
 
+      <div class="new-row"></div>
       <div class="sixth-row" *ngFor="let gym of arr">
-        <ion-row>
-          <ion-col  size="3.5">
+        <ion-row class="sixth-row-1">
+          <ion-col  size="3" class="col-img">
             <img src="../../assets/images/gym.jpg" class="gym-image">
           </ion-col>
 
-          <ion-col  size="7.7">
-            <div class="gym-name"><ion-label class="ion-text-wrap">{{gym.gymName}}</ion-label></div>
-            <div class="gym-details"><ion-row><ion-col size="1.5"><ion-icon  name="ios-time"></ion-icon> </ion-col><ion-col size="9">{{gym.gymDetails}}</ion-col></ion-row> </div>
-            <div *ngIf="gymm == true" class="buttons"><ion-row ><ion-col size="6"></ion-col> <ion-col size="6"><ion-button color="secondary">Available</ion-button></ion-col></ion-row></div>
+          <ion-col  size="9" class="main-col">
+            <div class="gym-name">{{gym.gymName}}</div>
+            <div class="gym-details"><img  class="time-image" src="../../assets/images/time.png">{{gym.gymDetails}} </div>
+            <div *ngIf="gymm == true" class="buttons"><ion-row class="set" ><ion-col size="6" class="set"></ion-col> <ion-col size="6"class="set1"><button class="btnn" >Available</button></ion-col></ion-row></div>
             <div  *ngIf="gymm== false"class="buttons"><ion-row ><ion-col size="6"></ion-col> <ion-col size="6"><ion-button color="medium">Unvailable</ion-button></ion-col></ion-row></div>
          
           </ion-col>
-      
         </ion-row>
+        <div class="bottom"></div>
 
       </div>
 

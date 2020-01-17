@@ -14,11 +14,11 @@ export class Tab1Page {
     
 
     arr=[
-          {gymName: "Gym name Max line. 1",gymDetails:"17:00 ~ 20:30"},
-          {gymName: "Gym name Max line. 1",gymDetails:"17:00 ~ 20:30"},
-          {gymName: "Gym name Max line. 1",gymDetails:"17:00 ~ 20:30"},
-          {gymName: "Gym name Max line. 1",gymDetails:"17:00 ~ 20:30"},
-          {gymName: "Gym name Max line. 1",gymDetails:"17:00 ~ 20:30"},
+          {gymName: " Gym name Max line. 1",gymDetails:"17:00 ~ 20:30"},
+          {gymName: " Gym name Max line. 1",gymDetails:"17:00 ~ 20:30"},
+          {gymName: " Gym name Max line. 1",gymDetails:"17:00 ~ 20:30"},
+          {gymName: " Gym name Max line. 1",gymDetails:"17:00 ~ 20:30"},
+          {gymName: " Gym name Max line. 1",gymDetails:"17:00 ~ 20:30"},
   
         ]
 
